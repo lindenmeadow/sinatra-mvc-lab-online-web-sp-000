@@ -11,7 +11,6 @@ class PigLatinizer
     char.match?(/[AaEeIiOoUu]/)
   end
 
-
   def pig_latinized_const_count(word)
     letters = []
     word.split("").each do |char|
@@ -24,11 +23,9 @@ class PigLatinizer
     letters.size.to_i
   end
 
-
   def piglatinize_sentence(sentence)
     sentence.split.collect { |word| piglatinize_word(word) }.join(" ")
   end
-
 
   def piglatinize_word(word)
     sliced_string = word.slice(pig_latinized_const_count(word), word.length - 1)

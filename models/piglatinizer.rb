@@ -21,3 +21,5 @@ def piglatinize(word)
     letter.downcase
     letter == "o" || letter == "e" || letter == "a" || letter == "i" || letter == "u"
   end
+
+end
